@@ -1,6 +1,12 @@
 
 {
   "tasks": {
-    "start": "deno run --allow-net --allow-env main.ts"
+    "start": "deno run main.ts"
+  },
+  "deploy": {
+    "runtime": {
+      "type": "dynamic",
+      "entrypoint": "./main.ts"
+    }
   }
 }
